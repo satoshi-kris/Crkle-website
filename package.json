@@ -1,0 +1,29 @@
+{
+  "name": "crkle-website",
+  "version": "1.0.0",
+  "description": "Official website for Crkle - The Grammarly for AI Prompts",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "ai",
+    "prompts",
+    "grammarly",
+    "chatgpt",
+    "claude",
+    "productivity"
+  ],
+  "author": "Crkle AI, Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/crkle-website.git"
+  },
+  "homepage": "https://crkle.com",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

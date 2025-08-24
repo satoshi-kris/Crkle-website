@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Crkle - AI Prompt Enhancer</title>
+    <meta name="description" content="Download Crkle for Chrome, macOS, Windows, and Linux. Start enhancing your AI prompts today.">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/crkle-logo.png" alt="Crkle Logo" class="logo">
+                    <span class="brand-name">Crkle</span>
+                </div>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/#features" class="nav-link">Features</a>
+                    <a href="/download" class="nav-link">Download</a>
+                    <a href="/#pricing" class="nav-link">Pricing</a>
+                    <a href="/support" class="nav-link">Support</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Download Hero -->
+    <section class="download-hero">
+        <div class="container">
+            <div class="download-hero-content">
+                <h1>Choose Your Platform</h1>
+                <p>Get Crkle for your device and start transforming your AI prompts today</p>
+                
+                <!-- Platform Detection -->
+                <div class="platform-detection" id="platform-detection">
+                    <div class="recommended-download" id="recommended-download">
+                        <!-- JavaScript will populate this -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Options -->
+    <section class="download-section">
+        <div class="container">
+            
+            <!-- Chrome Extension -->
+            <div class="download-platform">
+                <div class="platform-header">
+                    <div class="platform-icon">🌐</div>
+                    <div class="platform-info">
+                        <h2>Chrome Extension</h2>
+                        <p>Perfect for web-based AI platforms like ChatGPT, Claude, and Gemini</p>
+                        <div class="platform-badges">
+                            <span class="badge">Most Popular</span>
+                            <span class="badge secondary">Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-content">
+                    <div class="download-details">
+                        <h3>Features:</h3>
+                        <ul class="feature-list">
+                            <li>✅ Works on 10+ AI platforms</li>
+                            <li>✅ Real-time prompt enhancement</li>
+                            <li>✅ Context-aware suggestions</li>
+                            <li>✅ Zero setup required</li>
+                            <li>✅ Privacy-focused design</li>
+                        </ul>
+                        
+                        <div class="version-info">
+                            <span class="version">Version 1.0.0</span>
+                            <span class="size">~500KB</span>
+                            <span class="requirements">Chrome 88+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="download-actions">
+                        <a href="https://chrome.google.com/webstore/detail/crkle/[extension-id]" 
+                           class="btn btn-primary btn-large download-btn">
+                            <span class="btn-icon">⬇️</span>
+                            Add to Chrome - Free
+                        </a>
+                        <div class="download-alt">
+                            <a href="/downloads/Crkle-Extension-v1.0.0-Production.zip" 
+                               class="btn btn-secondary"
+                               onclick="trackDownload('extension', 'manual')">
+                                Download ZIP (Manual Install)
+                            </a>
+                        </div>
+                        <div class="install-guide">
+                            <a href="/help/extension-install" class="help-link">
+                                📖 Installation Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop App -->
+            <div class="download-platform">
+                <div class="platform-header">
+                    <div class="platform-icon">💻</div>
+                    <div class="platform-info">
+                        <h2>Desktop App</h2>
+                        <p>System-wide AI prompt enhancement that works like Grammarly everywhere</p>
+                        <div class="platform-badges">
+                            <span class="badge">Power Users</span>
+                            <span class="badge secondary">Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-content">
+                    <div class="download-details">
+                        <h3>Features:</h3>
+                        <ul class="feature-list">
+                            <li>✅ Universal app compatibility</li>
+                            <li>✅ 50ms ultra-fast detection</li>
+                            <li>✅ One-click enhancement</li>
+                            <li>✅ Menu bar integration</li>
+                            <li>✅ Global keyboard shortcuts</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Platform-specific downloads -->
+                    <div class="desktop-downloads">
+                        <!-- macOS -->
+                        <div class="desktop-platform">
+                            <div class="desktop-platform-header">
+                                <img src="assets/platforms/macos.png" alt="macOS" class="platform-logo">
+                                <div>
+                                    <h4>macOS</h4>
+                                    <p>macOS 10.15 or later</p>
+                                </div>
+                            </div>
+                            <div class="desktop-downloads-list">
+                                <a href="/downloads/Crkle-1.0.0-arm64.dmg" 
+                                   class="btn btn-primary"
+                                   onclick="trackDownload('desktop', 'mac-apple-silicon')">
+                                    Apple Silicon (M1/M2/M3)
+                                </a>
+                                <a href="/downloads/Crkle-1.0.0.dmg" 
+                                   class="btn btn-secondary"
+                                   onclick="trackDownload('desktop', 'mac-intel')">
+                                    Intel Mac
+                                </a>
+                            </div>
+                            <div class="version-info">
+                                <span class="version">v1.0.0</span>
+                                <span class="size">~45MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Windows -->
+                        <div class="desktop-platform">
+                            <div class="desktop-platform-header">
+                                <img src="assets/platforms/windows.png" alt="Windows" class="platform-logo">
+                                <div>
+                                    <h4>Windows</h4>
+                                    <p>Windows 10 or later</p>
+                                </div>
+                            </div>
+                            <div class="desktop-downloads-list">
+                                <a href="/downloads/Crkle-Windows-v1.0.0.zip" 
+                                   class="btn btn-primary"
+                                   onclick="trackDownload('desktop', 'windows')">
+                                    Download for Windows
+                                </a>
+                                <div class="download-note">
+                                    <small>⚠️ Extract and run Crkle.exe</small>
+                                </div>
+                            </div>
+                            <div class="version-info">
+                                <span class="version">v1.0.0</span>
+                                <span class="size">~50MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Linux -->
+                        <div class="desktop-platform">
+                            <div class="desktop-platform-header">
+                                <img src="assets/platforms/linux.png" alt="Linux" class="platform-logo">
+                                <div>
+                                    <h4>Linux</h4>
+                                    <p>Ubuntu 18.04+ / Similar</p>
+                                </div>
+                            </div>
+                            <div class="desktop-downloads-list">
+                                <a href="/downloads/Crkle-1.0.0.AppImage" 
+                                   class="btn btn-primary"
+                                   onclick="trackDownload('desktop', 'linux')">
+                                    Download AppImage
+                                </a>
+                                <div class="download-note">
+                                    <small>💡 Make executable: chmod +x</small>
+                                </div>
+                            </div>
+                            <div class="version-info">
+                                <span class="version">v1.0.0</span>
+                                <span class="size">~47MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Release Notes -->
+            <div class="release-info">
+                <div class="release-section">
+                    <h3>📋 What's New in v1.0.0</h3>
+                    <ul class="release-notes">
+                        <li>🚀 Initial release with Grammarly-style prompt enhancement</li>
+                        <li>⚡ Ultra-fast 50ms text detection</li>
+                        <li>🌐 Support for 10+ major AI platforms</li>
+                        <li>💻 Universal desktop app compatibility</li>
+                        <li>🎯 Context-aware prompt suggestions</li>
+                        <li>🔒 Privacy-focused, secure processing</li>
+                    </ul>
+                </div>
+                
+                <div class="release-section">
+                    <h3>🔧 System Requirements</h3>
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <strong>Chrome Extension:</strong>
+                            <ul>
+                                <li>Google Chrome 88+</li>
+                                <li>Internet connection for AI enhancement</li>
+                                <li>~1MB storage space</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-item">
+                            <strong>Desktop App:</strong>
+                            <ul>
+                                <li>macOS 10.15+ / Windows 10+ / Ubuntu 18.04+</li>
+                                <li>50MB available storage</li>
+                                <li>Internet connection for AI enhancement</li>
+                                <li>Accessibility permissions (macOS/Linux)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help & Support -->
+            <div class="download-help">
+                <h3>Need Help?</h3>
+                <div class="help-links">
+                    <a href="/help/installation" class="help-link">
+                        📖 Installation Guide
+                    </a>
+                    <a href="/help/getting-started" class="help-link">
+                        🚀 Getting Started
+                    </a>
+                    <a href="/help/troubleshooting" class="help-link">
+                        🔧 Troubleshooting
+                    </a>
+                    <a href="/contact" class="help-link">
+                        💬 Contact Support
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/crkle-logo.png" alt="Crkle Logo" class="footer-logo">
+                        <span class="footer-brand-name">Crkle</span>
+                    </div>
+                    <p>The Grammarly for AI prompts. Transform your AI interactions with intelligent prompt enhancement.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="/download">Download</a></li>
+                        <li><a href="/#features">Features</a></li>
+                        <li><a href="/#pricing">Pricing</a></li>
+                        <li><a href="/changelog">Changelog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/status">Status</a></li>
+                        <li><a href="/feedback">Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                        <li><a href="/security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2025 Crkle AI, Inc. All rights reserved.
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/download.js"></script>
+</body>
+</html>
+
+<style>
+/* Additional Download Page Styles */
+.download-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #ff4000 0%, #ff6b35 100%);
+    color: white;
+    text-align: center;
+}
+
+.download-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.download-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 2rem;
+}
+
+.download-section {
+    padding: 80px 0;
+}
+
+.download-platform {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.platform-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.platform-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.platform-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.platform-info p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.platform-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.badge.secondary {
+    background: var(--secondary-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.download-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.download-details h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.version-info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.download-actions {
+    text-align: center;
+}
+
+.download-btn {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.download-alt {
+    margin-bottom: 1rem;
+}
+
+.install-guide {
+    margin-top: 1rem;
+}
+
+.help-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+.desktop-downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.desktop-platform {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+.desktop-platform-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.platform-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.desktop-platform-header h4 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.desktop-platform-header p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.desktop-downloads-list {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-note {
+    margin-top: 0.5rem;
+}
+
+.download-note small {
+    color: var(--text-secondary);
+}
+
+.release-info {
+    background: var(--secondary-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+.release-section {
+    margin-bottom: 2rem;
+}
+
+.release-section:last-child {
+    margin-bottom: 0;
+}
+
+.release-section h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.release-notes {
+    list-style: none;
+    padding: 0;
+}
+
+.release-notes li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.requirement-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.requirement-item ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.requirement-item li {
+    margin-bottom: 0.25rem;
+    color: var(--text-secondary);
+}
+
+.download-help {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+}
+
+.download-help h3 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.help-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.help-links .help-link {
+    padding: 0.75rem 1.5rem;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+}
+
+.help-links .help-link:hover {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.platform-detection {
+    margin-top: 2rem;
+}
+
+.recommended-download {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .platform-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .download-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .desktop-downloads-list {
+        flex-direction: column;
+    }
+    
+    .help-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
